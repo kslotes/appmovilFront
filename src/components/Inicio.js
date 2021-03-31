@@ -1,6 +1,6 @@
-import styled from 'styled-components'
-import Button from 'react-bootstrap/Button'
-import StyledContainer from './StyledContainer';
+import styled from 'styled-components';
+import Button from 'react-bootstrap/Button';
+import {Link} from "react-router-dom";
 
 const StyledButton = styled(Button)`
       padding: 1rem;
@@ -12,13 +12,15 @@ const StyledButton = styled(Button)`
 
 function Inicio() {
       return (
-                  <StyledContainer>
-                       <h1>¡Bienvenid@!</h1>
-                       <br></br>
-                       <h5>Para comenzar, presiona el botón</h5>
-                       <hr></hr>
-                       <StyledButton variant="primary" onClick={() => {alert('Presionadisimo')}}>Comenzar Escaneo</StyledButton>{' '}
-                  </StyledContainer>
+            <div class="container">
+                  <div>
+                        <h1>¡Bienvenid@!</h1>
+                  </div>
+                  <h5>Para comenzar, presiona el botón</h5>
+                  <Link to="menu">
+                        <StyledButton>Comenzar Escaneo</StyledButton>{' '}
+                  </Link>
+            </div>
       );
 }
 
