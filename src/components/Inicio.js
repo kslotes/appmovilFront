@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 import Button from 'react-bootstrap/Button';
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
+import StyledContainer from './StyledContainer'
 
 const StyledButton = styled(Button)`
       padding: 1rem;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       background-color: #3651a8;
       border: none;
       border-radius: 15px;
@@ -12,15 +13,13 @@ const StyledButton = styled(Button)`
 
 function Inicio() {
       return (
-            <div class="container">
-                  <div>
-                        <h1>¡Bienvenid@!</h1>
-                  </div>
-                  <h5>Para comenzar, presiona el botón</h5>
+            <StyledContainer>
+                  <h1>¡Bienvenid@!</h1><br/>
+                  <h5>Para comenzar, presiona el botón</h5><br/>
                   <Link to="menu">
                         <StyledButton>Comenzar Escaneo</StyledButton>{' '}
                   </Link>
-            </div>
+            </StyledContainer>
       );
 }
 
