@@ -6,6 +6,7 @@ const StyledCont = styled(Container)`
       background-color: rgba(255, 255, 255, 0.3);
       padding: 3rem 5rem 5rem 5rem;
       width: 80%;
+      height: 100%;
       border-radius: 15px;
       margin: auto;
       margin-top: 2rem;
