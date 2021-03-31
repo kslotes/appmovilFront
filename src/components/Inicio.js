@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import Button from 'react-bootstrap/Button';
-import StyledContainer from './StyledContainer';
 import {Link} from "react-router-dom";
 
 const StyledButton = styled(Button)`
@@ -13,15 +12,15 @@ const StyledButton = styled(Button)`
 
 function Inicio() {
       return (
-            <StyledContainer>
-                  <h1>¡Bienvenid@!</h1>
-                  <br></br>
+            <div class="container">
+                  <div>
+                        <h1>¡Bienvenid@!</h1>
+                  </div>
                   <h5>Para comenzar, presiona el botón</h5>
-                  <hr></hr>
                   <Link to="menu">
                         <StyledButton>Comenzar Escaneo</StyledButton>{' '}
                   </Link>
-            </StyledContainer>
+            </div>
       );
 }
 

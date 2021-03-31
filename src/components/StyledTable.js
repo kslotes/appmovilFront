@@ -7,7 +7,6 @@ const StyledTab = styled(Table)`
       border: none;
       border-radius: 15px;
 `
-
 const StyledTable = () => {
       return (
             <StyledTab striped borderless>
