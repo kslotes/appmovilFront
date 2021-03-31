@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import React, { Component } from 'react';
-
+import Input from "./components/common/input";
+import Form from "./components/common/form";
 class Login extends Component {
     state = {
         data: { username: "", password: "" },
@@ -18,7 +18,7 @@ class Login extends Component {
           <div className="card-body">
             <form onSubmit={this.handleSubmit}>
               <div>
-                <h1>Vidly Login</h1>
+                <h1>Login Form</h1>
               </div>
               {this.renderInput("username", "Nombre de usuario", "text")}
               {this.renderInput("password", "Contraseña", "password")}

@@ -1,5 +1,5 @@
 import StyledContainer from './StyledContainer'
-import StyledTable from './StyledTable'
+import StyledTable from './StyledTable/StyledTable'
 
 const MenuAsistencia = () => {
       return (
