@@ -18,10 +18,10 @@ function Inicio() {
       </div>
       <h5>Para comenzar, presiona el botón</h5>
       <div className="row">
-        <Link to="menu">
+        <Link to="/menu">
           <StyledButton>Comenzar Escaneo</StyledButton>
         </Link>
-        <Link to="login">
+        <Link to="/login">
           <StyledButton>Ingresar como Encargado </StyledButton>
         </Link>
       </div>
