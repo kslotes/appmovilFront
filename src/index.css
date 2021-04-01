@@ -1,7 +1,7 @@
 html, body {
       background: linear-gradient(to bottom, #428bca 0%, #1d374e 100%);
       background-repeat: no-repeat;
-      height: 100vm;
+      height: 100vh;
       margin: 0;
 }
 body {

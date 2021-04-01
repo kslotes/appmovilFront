@@ -12,10 +12,30 @@ const StyledTab = styled(Table)`
 
 
 const StyledTable = () => {
+
+      const campos = ["ID", "Nombre", "Apellido", "Presente", "Acciones"]
+      const registros = [
+            {
+                   id: 1,
+                   nombre: 'Agustin',
+                   apellido: 'Moro'
+            },
+            {
+                  id: 2,
+                  nombre: 'Gustavo',
+                  apellido: 'Iglesias',
+            },
+            {
+                  id: 3,
+                  nombre: 'Thomas',
+                  apellido: 'Diaz',
+            }
+      ]
+
       return (
             <StyledTab striped borderless className="text-center">
-                  <TableHeader/>
-                  <TableBody/>
+                  <TableHeader campos={campos}/>
+                  <TableBody registros={registros}/>
             </StyledTab>
       )
 }

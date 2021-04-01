@@ -1,4 +1,4 @@
-const selector = ({ name, opciones }) => {
+const selector = ({ name, opciones, placeholder }) => {
   return (
     <div>
       <div className="input-group mb-3">
@@ -6,7 +6,7 @@ const selector = ({ name, opciones }) => {
           {name}
         </label>
         <select className="custom-select" name={name}>
-          <option value="" />
+          <option value="" selected disabled>Indique</option>
           {opciones.map((opcion) => {
             return (
               <option key={opcion} value={opcion}>

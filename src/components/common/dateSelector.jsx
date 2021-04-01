@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 const dateSelector = ({ name }) => {
   return (
     <div className="input-group mb-3">

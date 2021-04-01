@@ -1,49 +1,29 @@
 import { TdAcciones } from './TdAcciones'
-import * as Icon from 'react-bootstrap-icons';
+import {Check2Square} from 'react-bootstrap-icons';
 
-export const TableBody = () => {
+export const TableBody = ({registros}) => {
+      console.log(registros)
       return (
             <tbody>
                   <tr>
-                        <td>1</td>
-                        <td>Thomas</td>
-                        <td>Diaz</td>
-                        <td><Icon.Check2Square/></td>
+                        <td>{registros[0].id}</td>
+                        <td>{registros[0].nombre}</td>
+                        <td>{registros[0].apellido}</td>
+                        <td><Check2Square/></td>
                         <TdAcciones />
                   </tr>
                   <tr>
-                        <td>2</td>
-                        <td>Gustavo</td>
-                        <td>Iglesias</td>
-                        <td><Icon.Check2Square/></td>
+                        <td>{registros[1].id}</td>
+                        <td>{registros[1].nombre}</td>
+                        <td>{registros[1].apellido}</td>
+                        <td><Check2Square/></td>
                         <TdAcciones />
                   </tr>
                   <tr>
-                        <td>3</td>
-                        <td>Agustin</td>
-                        <td>Moro</td>
-                        <td><Icon.Check2Square/></td>
-                        <TdAcciones />
-                  </tr>
-                  <tr>
-                        <td>4</td>
-                        <td>Thomas</td>
-                        <td>Diaz</td>
-                        <td><Icon.Check2Square/></td>
-                        <TdAcciones />
-                  </tr>
-                  <tr>
-                        <td>5</td>
-                        <td>Gustavo</td>
-                        <td>Iglesias</td>
-                        <td><Icon.Check2Square/></td>
-                        <TdAcciones />
-                  </tr>
-                  <tr>
-                        <td>6</td>
-                        <td>Agustin</td>
-                        <td>Moro</td>
-                        <td><Icon.Check2Square/></td>
+                        <td>{registros[2].id}</td>
+                        <td>{registros[2].nombre}</td>
+                        <td>{registros[2].apellido}</td>
+                        <td><Check2Square/></td>
                         <TdAcciones />
                   </tr>
             </tbody>

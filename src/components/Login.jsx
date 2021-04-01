@@ -1,5 +1,4 @@
-import React, { Component } from "react";
-import Input from "./common/input";
+import React from "react";
 import Form from "./common/form";
 import Joi from "joi-browser";
 
@@ -35,9 +34,9 @@ class Login extends Form {
       <div className="container w-50">
         <div className="card">
           <div className="card-body">
-            <form onSubmit={this.handleSubmit}>
+            <form onSubmit={this.handleSubmit} autoComplete="off">
               <div>
-                <h1>Iniciar Sesión</h1>
+                <h2>Iniciar Sesión</h2>
               </div>
               {this.renderInput("username", "Nombre de usuario", "text")}
               {this.renderInput("password", "Contraseña", "password")}

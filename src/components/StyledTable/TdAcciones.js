@@ -1,11 +1,11 @@
-import * as Icon from 'react-bootstrap-icons';
+import {Eye, Pencil, Phone} from 'react-bootstrap-icons';
 
 export const TdAcciones = () => {
       return (
             <td>
-                  <Icon.Eye className="mr-1 ml-1"/>
-                  <Icon.Pencil className="mr-1 ml-1"/>
-                  <Icon.Phone className="mr-1"/>
+                  <Eye className="mr-1 ml-1"/>
+                  <Pencil className="mr-1 ml-1"/>
+                  <Phone className="mr-1"/>
             </td>
       )
 }

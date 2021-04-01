@@ -12,7 +12,7 @@ const StyledButton = styled(Button)`
 
 function Inicio() {
   return (
-    <div class="container">
+    <div class="container-fluid d-flex flex-column align-items-center">
       <div>
         <h1>¡Bienvenid@!</h1>
       </div>

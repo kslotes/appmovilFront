@@ -4,8 +4,8 @@ import styled from 'styled-components'
 
 const StyledCont = styled(Container)`
       background-color: rgba(255, 255, 255, 0.3);
-      padding: 3rem 5rem 5rem 5rem;
-      width: 90%;
+      padding: 2rem 3rem 3rem 2rem;
+      width: 100%;
       border-radius: 15px;
       margin: auto;
       margin-top: 2rem;

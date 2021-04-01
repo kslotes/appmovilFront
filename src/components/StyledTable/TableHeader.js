@@ -1,12 +1,12 @@
-export const TableHeader = () => {
+export const TableHeader = ({campos}) => {
       return (
             <thead>
                   <tr>
-                        <th>#</th>
-                        <th>Nombre</th>
-                        <th>Apellido</th>
-                        <th>Presente</th>
-                        <th>Acciones</th>
+                        <th>{campos[0]}</th>
+                        <th>{campos[1]}</th>
+                        <th>{campos[2]}</th>
+                        <th>{campos[3]}</th>
+                        <th>{campos[4]}</th>
                   </tr>
             </thead>
       )
