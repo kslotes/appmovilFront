@@ -1,9 +1,5 @@
 const InfoDerecha = () => {
-      return (
-            <div>
-                  InfoDerecha
-            </div>
-      )
-}
+  return <div className="p-2">InfoDerecha</div>;
+};
 
 export default InfoDerecha;

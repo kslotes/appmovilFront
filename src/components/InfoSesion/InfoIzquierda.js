@@ -1,55 +1,27 @@
-import InputGroup from 'react-bootstrap/InputGroup'
-import FormControl from 'react-bootstrap/FormControl'
+import FormControl from "react-bootstrap/FormControl";
+import DateSelector from "../common/dateSelector";
+import Selector from "../common/selector";
+import React, { Component } from "react";
 
-const InfoIzquierda = () => {
-      return (
-
-            <div className="float-left">
-                  <InputGroup className="mb-2">
-                        <InputGroup.Prepend>
-                              <InputGroup.Text id="basic-addon1">Sesion</InputGroup.Text>
-                        </InputGroup.Prepend>
-                        <FormControl
-                              placeholder="Numero"
-                              aria-label="Sesion"
-                              aria-describedby="basic-addon1"
-                              as="select"
-                        >
-                              <option selected disabled variant="secondary">Número</option>
-                              <option value="1">1</option>
-                              <option value="2">2</option>
-                              <option value="3">3</option>
-                              <option value="4">4</option>
-                        </FormControl>
-                  </InputGroup>
-                  <InputGroup className="mb-2">
-                        <InputGroup.Prepend>
-                              <InputGroup.Text id="basic-addon1">Aula</InputGroup.Text>
-                        </InputGroup.Prepend>
-                        <FormControl
-                              placeholder="Numero"
-                              aria-label="Sesion"
-                              aria-describedby="basic-addon1"
-                              as="select"
-                        >
-                              <option selected disabled variant="secondary">Número</option>
-                              <option value="1">1</option>
-                              <option value="2">2</option>
-                              <option value="3">3</option>
-                              <option value="4">4</option>
-                        </FormControl>
-                  </InputGroup>
-                  <InputGroup>
-                        <InputGroup.Prepend>
-                              <InputGroup.Text id="basic-date">Fecha</InputGroup.Text>
-                              <FormControl
-                                    arial-label="Fecha"
-                                    type="date"
-                              />
-                        </InputGroup.Prepend>
-                  </InputGroup>
-            </div>
-      )
+class InfoIzquierda extends Component {
+  state = {
+    opciones: [1, 2, 3, 4],
+  };
+  render() {
+    return (
+      <div className="row">
+        <div className="p-2">
+          <Selector name="Sesiones" opciones={this.state.opciones}></Selector>
+        </div>
+        <div className="p-2">
+          <Selector name="Aulas" opciones={this.state.opciones}></Selector>
+        </div>
+        <div className="p-2">
+          <DateSelector name="Fecha" />
+        </div>
+      </div>
+    );
+  }
 }
 
 export default InfoIzquierda;
