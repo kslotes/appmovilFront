@@ -6,6 +6,8 @@ import React, { Component } from "react";
 class InfoIzquierda extends Component {
   state = {
     opciones: [1, 2, 3, 4],
+    aula: {},
+    sesion: {},
   };
   render() {
     return (
